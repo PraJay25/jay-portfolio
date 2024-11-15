@@ -1,6 +1,6 @@
 const logotext = "Jay";
 const meta = {
-  title: "Jay K",
+  title: "Jay",
   description:
     "I’m Jay AI enthusiastic _ Full stack devloper,currently working in Tokyo",
 };
@@ -14,7 +14,7 @@ const introdata = {
   },
   description:
     "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
-  your_img_url: "/jay.jpg",
+  your_img_url: "/jay.png",
   //your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
