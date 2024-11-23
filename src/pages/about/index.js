@@ -9,6 +9,7 @@ import {
   skills,
   services,
 } from "../../content_option";
+import GlobeCanvas from "../../components/GlobeCanvas";
 
 export const About = () => {
   return (
@@ -92,6 +93,12 @@ export const About = () => {
                 </div>
               );
             })}
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="12">
+            <h3 className="color_sec py-4">Globe Animation</h3>
+            <GlobeCanvas />
           </Col>
         </Row>
       </Container>

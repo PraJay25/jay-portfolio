@@ -1,0 +1,6 @@
+/* src/components/GlobeCanvas/style.css */
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent; /* Remove background color */
+}
