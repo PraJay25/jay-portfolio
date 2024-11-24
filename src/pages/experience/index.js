@@ -7,17 +7,17 @@ import { Container, Row, Col } from "react-bootstrap";
 const Experiences = [
   {
     company: "Rakuten Inc.",
-    duration: "Jan 2020 - Present",
+    duration: "Jan 2024 - Present",
     place: "Tokyo, Japan",
     image: "/work/rakuten.png",
-    link: "#", // Add the appropriate link
+    link: "/portfolio", // Add the appropriate link
   },
   {
     company: "Seanergy Digital",
     duration: "Jun 2018 - Sep 2019",
     place: "Hyderabad, India",
     image: "/work/seanergy.png",
-    link: "#", // Add the appropriate link
+    link: "/portfolio", // Add the appropriate link
   },
 
   {
@@ -39,7 +39,7 @@ const Experiences = [
     duration: "Sep 2019 - Nov 2019",
     place: "Hyderabad, India",
     image: "/work/UHG.png",
-    link: "#", // Add the appropriate link
+    link: "/portfolio", // Add the appropriate link
   },
 
   {
@@ -54,6 +54,9 @@ const Experiences = [
 ];
 
 export const Experience = () => {
+  const handleResumeClick = () => {
+    window.open("/resume/Jay_Full_Stack_Engineer_10+Years.pdf", "_blank");
+  };
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -81,6 +84,17 @@ export const Experience = () => {
             </div>
           ))}
         </div>
+        <Row className="center-button">
+          <Col lg="auto" className="form-group">
+            <button
+              className="btn ac_btn"
+              type="button"
+              onClick={handleResumeClick}
+            >
+              View Resume
+            </button>
+          </Col>
+        </Row>
       </Container>
     </HelmetProvider>
   );

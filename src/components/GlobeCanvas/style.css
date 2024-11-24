@@ -4,3 +4,17 @@ canvas {
   margin: 0 auto;
   background-color: transparent; /* Remove background color */
 }
+
+#tags {
+  display: none;
+}
+
+#tags li a img {
+  width: 4px; /* Set the width to 14px */
+  height: 4px; /* Set the height to 14px */
+}
+
+#tags li a {
+  font-size: 8px; /* Adjust the font size for the labels */
+  color: var(--overlay-color);
+}

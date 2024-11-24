@@ -6,6 +6,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
 export const Portfolio = () => {
+  const handleResumeClick = () => {
+    window.open("/resume/Jay_Full_Stack_Engineer_10+Years.pdf", "_blank");
+  };
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -39,8 +42,12 @@ export const Portfolio = () => {
         </div>
         <Row className="center-button">
           <Col lg="auto" className="form-group">
-            <button className="btn ac_btn" type="button">
-              Many More ..
+            <button
+              className="btn ac_btn"
+              type="button"
+              onClick={handleResumeClick}
+            >
+              View Resume
             </button>
           </Col>
         </Row>

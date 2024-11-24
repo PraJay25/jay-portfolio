@@ -1,120 +1,116 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 
 const images = [
-  { src: "/angular.png", label: "angular" },
-  { src: "/aws.png", label: "aws" },
-  { src: "/c-.png", label: "c-" },
-  { src: "/c-sharp.png", label: "c-sharp" },
-  { src: "/docker.png", label: "docker" },
-  { src: "/java.png", label: "java" },
-  { src: "/js.png", label: "js" },
-  { src: "/net.png", label: "net" },
+  { src: "/angular.png", label: "Angular" },
+  { src: "/aws.png", label: "AWS" },
+  { src: "/c-.png", label: "C++" },
+  { src: "/c-sharp.png", label: "C-Sharp" },
+  { src: "/docker.png", label: "Docker" },
+  { src: "/java.png", label: "Java" },
+  { src: "/js.png", label: "JavaScript" },
+  { src: "/net.png", label: ".Net" },
   { src: "/React.png", label: "React" },
-  { src: "/typescript.png", label: "typescript" },
-  // Add more images and labels as needed
+  { src: "/typescript.png", label: "Typescript" },
+  { src: "/kafka.png", label: "" },
+  { src: "/apache.png", label: "" },
+  { src: "/tenserflow.png", label: "Tenserflow" },
+  { src: "/python.png", label: "Python" },
+  { src: "/gpt.png", label: "Open AI" },
+  { src: "/gcp.png", label: "GCP" },
+  { src: "/relativity.png", label: "Relativity" },
+  { src: "/kubernet.png", label: "Kubernetes" },
+  { src: "/RabbitMQ.png", label: "RabbitMQ" },
+  { src: "/git.png", label: "GIT" },
+  { src: "/git2.png", label: "GitHub" },
+  { src: "/Gitlab.png", label: "GitLab" },
+  { src: "/cicd.png", label: "Jetkins" },
+  { src: "/tailwind.png", label: "Tailwind" },
+  { src: "/three.png", label: "Three" },
+  { src: "/node.jpg", label: "Node" },
+  { src: "/aspnet.jpg", label: "ASP.NET" },
+  { src: "/MySQL.png", label: "MySQL" },
+  { src: "/nextjs.png", label: "Next" },
+  { src: "/jquery.png", label: "JQuery" },
+  { src: "/json.png", label: "JSON" },
+  { src: "/rest.png", label: "REST" },
+  { src: "/svn.png", label: "SVN" },
+  { src: "/express.webp", label: "Express" },
+  { src: "/post.png", label: "Postgre" },
+  { src: "/awss.webp", label: "" },
+  { src: "/chrome.png", label: "DevTools" },
+  { src: "/open.png", label: "Open Source" },
+  { src: "/golang.png", label: "Golang" },
+  { src: "/css.png", label: "CSS" },
+  { src: "/redis.png", label: "Redis" },
+  { src: "/devops.png", label: "DevOps" },
+  { src: "/Cloudflare.png", label: "Cloudflare" },
+  { src: "/azure.png", label: "AZURE" },
+  { src: "/nuget.png", label: "NuGet" },
+  { src: "/Spring.png", label: "Spring" },
+  { src: "/HTML5.png", label: "HTML" },
+  { src: "/Cassandra.png", label: "Cassandra" },
+  { src: "/Ubuntu.png", label: "Ubuntu" },
+  { src: "/Material UI.png", label: "Material UI" },
+  { src: "/Vue.js.png", label: "Vue" },
+  { src: "/Swagger.png", label: "Swagger" },
+  { src: "/Stack Overflow.png", label: "Stack Overflow" },
+  { src: "/Bootstrap.png", label: "Bootstrap" },
+  { src: "/GitHub Codespaces.png", label: "GitHub Codespaces" },
+  { src: "/MongoDB.png", label: "MongoDB" },
 ];
 
 const GlobeCanvas = () => {
   const canvasRef = useRef(null);
-  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    const numImages = images.length;
-    const imageSize = 48;
-    const margin = 20; // Add margin between icons
-    const radius = 200;
-    let angle = 0;
-    let animationFrameId;
 
-    const loadImage = (src) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = () => resolve(img);
-        img.onerror = (err) => reject(err);
+    if (canvas && window.TagCanvas) {
+      window.TagCanvas.Start("myCanvas", "tags", {
+        textColour: "#000000",
+        outlineColour: "#ff00ff",
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.05,
+        minSpeed: 0.01,
+        wheelZoom: false,
+        shuffleTags: true,
+        shape: "sphere", // Honeycomb pattern "sphere", "hcylinder", "vcylinder", "hcone", "vcone", "hexagon"
+        //lock: "x",
+        zoom: 1,
+        noSelect: true,
+        textHeight: 10, // Adjust the text height
+        imageMode: "both",
+        imagePosition: "top",
+        imageScale: 0.1, // Scale down the images
+        initial: [0.1, -0.1],
       });
-    };
-
-    const draw = async () => {
-      try {
-        const loadedImages = await Promise.all(
-          images.map((img) => loadImage(img.src))
-        );
-
-        const positions = [];
-        const rows = Math.ceil(Math.sqrt(numImages));
-        const cols = Math.ceil(numImages / rows);
-
-        for (let i = 0; i < rows; i++) {
-          for (let j = 0; j < cols; j++) {
-            if (positions.length < numImages) {
-              const x =
-                j * (imageSize + margin) +
-                (i % 2 === 0 ? 0 : (imageSize + margin) / 2);
-              const y = i * (imageSize + margin);
-              positions.push({ x, y });
-            }
-          }
-        }
-
-        const animate = () => {
-          if (!isPaused) {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            loadedImages.forEach((img, index) => {
-              const { x, y } = positions[index];
-              const newY =
-                y + radius * Math.sin(angle + (index * Math.PI) / numImages);
-              const opacity =
-                0.5 + 0.5 * Math.cos(angle + (index * Math.PI) / numImages); // Opacity based on angle
-
-              ctx.globalAlpha = opacity;
-              ctx.drawImage(img, x, newY, imageSize, imageSize);
-              ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-              ctx.font = "16px Arial";
-              ctx.textAlign = "center";
-              ctx.fillText(
-                images[index].label,
-                x + imageSize / 2,
-                newY + imageSize + 20
-              );
-            });
-
-            angle += 0.01;
-          }
-          animationFrameId = requestAnimationFrame(animate);
-        };
-
-        animate();
-      } catch (error) {
-        console.error("Error loading images:", error);
-      }
-    };
-
-    draw();
-
-    const handleMouseEnter = () => {
-      setIsPaused(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsPaused(false);
-    };
-
-    canvas.addEventListener("mouseenter", handleMouseEnter);
-    canvas.addEventListener("mouseleave", handleMouseLeave);
+    }
 
     return () => {
-      canvas.removeEventListener("mouseenter", handleMouseEnter);
-      canvas.removeEventListener("mouseleave", handleMouseLeave);
-      cancelAnimationFrame(animationFrameId);
+      if (window.TagCanvas) {
+        window.TagCanvas.Delete("myCanvas");
+      }
     };
-  }, [isPaused]);
+  }, []);
 
-  return <canvas ref={canvasRef} width={800} height={600} />;
+  return (
+    <div>
+      <canvas id="myCanvas" ref={canvasRef} width={800} height={600}>
+        <ul id="tags">
+          {images.map((img, index) => (
+            <li key={index}>
+              <a href="#">
+                <img src={img.src} alt={img.label} />
+                {img.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </canvas>
+    </div>
+  );
 };
 
 export default GlobeCanvas;

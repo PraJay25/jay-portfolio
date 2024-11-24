@@ -6,11 +6,11 @@ const meta = {
 };
 
 const introdata = {
-  title: "I’m Jay Prakash K",
+  title: "I’m Jay Prakash",
   animated: {
-    first: "I love coding and writing tomorrow's code today.",
-    second: "I craft tools for real-life solutions.",
-    third: "I develop intelligent applications with generative AI.",
+    first: "I'm transforming ideas into code, one line at a time.",
+    second: "I'm building the future with innovative tools and technology.",
+    third: "Also, harnessing the power of AI to create smarter solutions.",
   },
   description:
     "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and many more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
@@ -19,10 +19,11 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "A bit about my self",
+  title: "A bit about myself",
   aboutme:
-    "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and many more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
+    "I am a passionate developer who likes creating solutions that not only streamline engineering processes but also revolutionize innovation. My career has been a thrilling ride, marked by the development of numerous AI apps, tactical tools, web and Windows applications, spanning industries such as forensic, eDiscovery, cyber security, eCommerce, logistics, and healthcare. Each project has been a unique learning experience, allowing me to hone my technical skills and expand my knowledge base.\n\nThroughout my career, I have led numerous teams, guiding them to successfully deliver projects that have generated substantial revenue for the firms I have worked with. My leadership style is rooted in fostering a collaborative environment where innovation thrives, and every team member feels valued and empowered.\n\nMy experience includes implementing numerous design patterns and software architectures, as well as integrating tons of third-party services, both open-source and commercial, such as Azure Services, Cognitive Services, AWS, GCP, and Relativity. From inception to deployment, I have built several applications from scratch, gaining a solid command of numerous technologies and acquiring valuable DevOps skills along the way. My core technical skills include C#, JavaScript, TypeScript, .NET, Node.js, React.js, Next.js, ASP.NET, and WCF, etc.\n\nBelow are the services and areas of my expertise. If you’re interested in any collaboration or have an opportunity in mind, please drop an email or reach out through a quick call. I am always excited to connect!",
 };
+
 const worktimeline = [
   {
     jobtitle: "Rakuten Inc.",
@@ -58,8 +59,8 @@ const worktimeline = [
 
 const skills = [
   {
-    name: "C#, Java, JavaScript, TypeScript",
-    value: 95,
+    name: "Programming Language: C#, Java, JavaScript, TypeScript",
+    value: 96,
   },
   {
     name: "React.js, Angular.js, jQuery, Three.js",
@@ -81,19 +82,44 @@ const skills = [
 
 const services = [
   {
-    title: "UI & UX Design",
+    title: "Back-end Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "With a decade of experience in back-end development, I specialize in creating robust, scalable, and secure server-side applications. My expertise includes working with various databases, APIs, and server technologies to ensure seamless integration and performance. Whether it's building RESTful services, microservices, or complex business logic, I deliver high-quality solutions tailored to your needs.",
   },
   {
-    title: "Mobile Apps",
+    title: "Web Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I develop dynamic and responsive web applications using the latest technologies and frameworks. From single-page applications (SPAs) to complex web platforms, I ensure a seamless user experience, high performance, and maintainability. My skill set includes HTML, CSS, JavaScript, React, Angular, Vue.js, and more, allowing me to create visually appealing and functional web solutions.",
   },
   {
-    title: "Wordpress Design",
+    title: "Windows Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I offer comprehensive Windows application development services, leveraging my extensive knowledge of .NET, C#, and other relevant technologies. Whether you need a desktop application for business operations, data management, or any other purpose, I can deliver a solution that is efficient, user-friendly, and tailored to your specific requirements.",
+  },
+  {
+    title: "System Design",
+    description:
+      "With a strong background in system architecture and design, I provide expert services in designing scalable, reliable, and efficient systems. I focus on creating architectures that meet your business goals, ensuring optimal performance, security, and maintainability. My approach includes thorough analysis, planning, and documentation to deliver a robust system design.",
+  },
+  {
+    title: "Front-end Development",
+    description:
+      "I specialize in crafting intuitive and engaging user interfaces using modern front-end technologies. My expertise includes HTML5, CSS3, JavaScript, and frameworks like React, Angular, and Vue.js. I focus on creating responsive, accessible, and visually appealing interfaces that provide an excellent user experience across all devices.",
+  },
+  {
+    title: "API Development and Integration",
+    description:
+      "I provide API development and integration services to connect your applications with third-party services or other internal systems. My experience includes creating RESTful and GraphQL APIs, ensuring secure and efficient data exchange. I also handle API documentation, versioning, and maintenance to ensure smooth and reliable integrations.",
+  },
+  {
+    title: "Database Design and Management",
+    description:
+      "I offer database design and management services, ensuring your data is structured, secure, and easily accessible. My expertise includes working with SQL and NoSQL databases, optimizing queries, and implementing data migration and backup strategies. I focus on creating efficient database schemas that support your application's performance and scalability needs.",
+  },
+  {
+    title: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)",
+    description:
+      "I provide DevOps services to streamline your development and deployment processes. My experience includes setting up CI/CD pipelines, automating workflows, and managing cloud infrastructure using tools like Docker, Kubernetes, Jenkins, and AWS. I aim to enhance your development efficiency, reduce deployment times, and ensure a reliable and scalable infrastructure.",
   },
 ];
 
@@ -187,7 +213,7 @@ const dataportfolio = [
 
 const contactConfig = {
   YOUR_EMAIL: "ai25jay@gmail.com",
-  YOUR_FONE: "+81 7083801***",
+  YOUR_FONE: "+81 7083801713",
   description:
     "I'm always excited to connect with fellow professionals, potential collaborators, and anyone passionate about technology and innovation. Whether you have a project in mind, need technical advice, or just want to network, feel free to reach out. Let's discuss how we can work together to achieve remarkable results. You can contact me via email. Looking forward to hearing from you!",
   // creat an emailjs.com account
@@ -199,10 +225,12 @@ const contactConfig = {
 
 const socialprofils = {
   github: "https://github.com/PraJay25",
-  facebook: "https://facebook.com",
   linkedin: "https://www.linkedin.com/in/jay-prakash-37068624/",
+  medium: "https://medium.com/@er.jay25",
+  quora: "https://jp.quora.com/profile/Jay-Prakash-214",
+  code: "https://leetcode.com/progress/",
   twitter: "https://twitter.com",
-  default: "helo.com",
+  facebook: "https://facebook.com",
 };
 export {
   meta,
