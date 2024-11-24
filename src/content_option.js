@@ -8,21 +8,22 @@ const meta = {
 const introdata = {
   title: "I’m Jay Prakash",
   animated: {
-    first: "I love coding and writing tomorrow's code today.",
-    second: "I craft tools for real-life solutions.",
-    third: "I develop intelligent applications with generative AI.",
+    first: "I'm transforming ideas into code, one line at a time.",
+    second: "I'm building the future with innovative tools and technology.",
+    third: "Also, harnessing the power of AI to create smarter solutions.",
   },
   description:
-    "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
+    "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and many more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
   your_img_url: "/jay.png",
   //your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
-  title: "A bit about my self",
+  title: "A bit about myself",
   aboutme:
-    "A Tech Lead with 10+ years in software development, specializing in e-Discovery, forensic, and cyber security domain. Based in Tokyo, I excel in full-stack engineering, AI, Web development and digital transformation. I've led teams at Rakuten, Deloitte, and more, earning accolades like the Project Excellence Award. Passionate about mentoring and innovation, I design scalable, high-performance systems. Explore my work and let's connect to drive tech excellence together!",
+    "I am a passionate developer who likes creating solutions that not only streamline engineering processes but also revolutionize innovation. My career has been a thrilling ride, marked by the development of numerous AI apps, tactical tools, web and Windows applications, spanning industries such as forensic, eDiscovery, cyber security, eCommerce, logistics, and healthcare. Each project has been a unique learning experience, allowing me to hone my technical skills and expand my knowledge base.\n\nThroughout my career, I have led numerous teams, guiding them to successfully deliver projects that have generated substantial revenue for the firms I have worked with. My leadership style is rooted in fostering a collaborative environment where innovation thrives, and every team member feels valued and empowered.\n\nMy experience includes implementing numerous design patterns and software architectures, as well as integrating tons of third-party services, both open-source and commercial, such as Azure Services, Cognitive Services, AWS, GCP, and Relativity. From inception to deployment, I have built several applications from scratch, gaining a solid command of numerous technologies and acquiring valuable DevOps skills along the way. My core technical skills include C#, JavaScript, TypeScript, .NET, Node.js, React.js, Next.js, ASP.NET, and WCF, etc.\n\nBelow are the services and areas of my expertise. If you’re interested in any collaboration or have an opportunity in mind, please drop an email or reach out through a quick call. I am always excited to connect!",
 };
+
 const worktimeline = [
   {
     jobtitle: "Rakuten Inc.",
@@ -58,8 +59,8 @@ const worktimeline = [
 
 const skills = [
   {
-    name: "C#, Java, JavaScript, TypeScript",
-    value: 95,
+    name: "Programming Language: C#, Java, JavaScript, TypeScript",
+    value: 96,
   },
   {
     name: "React.js, Angular.js, jQuery, Three.js",
@@ -81,101 +82,138 @@ const skills = [
 
 const services = [
   {
-    title: "UI & UX Design",
+    title: "Back-end Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "With a decade of experience in back-end development, I specialize in creating robust, scalable, and secure server-side applications. My expertise includes working with various databases, APIs, and server technologies to ensure seamless integration and performance. Whether it's building RESTful services, microservices, or complex business logic, I deliver high-quality solutions tailored to your needs.",
   },
   {
-    title: "Mobile Apps",
+    title: "Web Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I develop dynamic and responsive web applications using the latest technologies and frameworks. From single-page applications (SPAs) to complex web platforms, I ensure a seamless user experience, high performance, and maintainability. My skill set includes HTML, CSS, JavaScript, React, Angular, Vue.js, and more, allowing me to create visually appealing and functional web solutions.",
   },
   {
-    title: "Wordpress Design",
+    title: "Windows Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I offer comprehensive Windows application development services, leveraging my extensive knowledge of .NET, C#, and other relevant technologies. Whether you need a desktop application for business operations, data management, or any other purpose, I can deliver a solution that is efficient, user-friendly, and tailored to your specific requirements.",
+  },
+  {
+    title: "System Design",
+    description:
+      "With a strong background in system architecture and design, I provide expert services in designing scalable, reliable, and efficient systems. I focus on creating architectures that meet your business goals, ensuring optimal performance, security, and maintainability. My approach includes thorough analysis, planning, and documentation to deliver a robust system design.",
+  },
+  {
+    title: "Front-end Development",
+    description:
+      "I specialize in crafting intuitive and engaging user interfaces using modern front-end technologies. My expertise includes HTML5, CSS3, JavaScript, and frameworks like React, Angular, and Vue.js. I focus on creating responsive, accessible, and visually appealing interfaces that provide an excellent user experience across all devices.",
+  },
+  {
+    title: "API Development and Integration",
+    description:
+      "I provide API development and integration services to connect your applications with third-party services or other internal systems. My experience includes creating RESTful and GraphQL APIs, ensuring secure and efficient data exchange. I also handle API documentation, versioning, and maintenance to ensure smooth and reliable integrations.",
+  },
+  {
+    title: "Database Design and Management",
+    description:
+      "I offer database design and management services, ensuring your data is structured, secure, and easily accessible. My expertise includes working with SQL and NoSQL databases, optimizing queries, and implementing data migration and backup strategies. I focus on creating efficient database schemas that support your application's performance and scalability needs.",
+  },
+  {
+    title: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)",
+    description:
+      "I provide DevOps services to streamline your development and deployment processes. My experience includes setting up CI/CD pipelines, automating workflows, and managing cloud infrastructure using tools like Docker, Kubernetes, Jenkins, and AWS. I aim to enhance your development efficiency, reduce deployment times, and ensure a reliable and scalable infrastructure.",
   },
 ];
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "/projects/cyber.png",
+    title: "R-Defenders",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "A web application that consolidates all cybersecurity tools into a single platform. Users can interact with news feeds, CVE, follow, comment, like, and share content. They can also add and rate security products and services, and receive real-time notifications. Advanced search allows users to find detailed information on organizations and employees.",
     link: "#",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
+    img: "/projects/nav.png",
+    title: "NavigAite",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Generative Artificial Intelligence (AI) solution - NavigAite™ for use on RelativityOne and Relativity Server to help organizations accelerate a wide range of document-oriented activities, including: document summarization; responsiveness, privilege, and personally identifiable information (PII) calls; and initial contract review.",
+    link: "https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/July-2024-NavigAite-placemat.pdf",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "/projects/translation.png",
+    title: "Assisted Translation",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "The Assisted Translation add-on allows users to search through a large population of documents, export extracted text, send it through a translation server, and have the translated text imported to the database, all at the “click of a  button”.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Assisted-Translation.pdf",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: "/projects/redaction.png",
+    title: "Assisted Redaction",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "An intuitive application called Assisted Redaction that automates the identification and protection of sensitive information allowing an organization’s legal team and its outside counsel to search across large data sets and automatically redact user defined terms.",
+    link: "https://www2.deloitte.com/us/en/pages/advisory/articles/deloitte-assisted-redaction.html",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: "/projects/watermark.png",
+    title: "Watermark PDF",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Safeguard exported documents with watermarked PDFs, enhancing security and control over document copies. With support for both RelativityOne and on-prem platforms, this accelerator expedites deliverables while maintaining secure document sharing.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Watermark-PDF.pdf",
   },
   {
-    img: "https://picsum.photos/400/700/?grayscale",
+    img: "/projects/dar.png",
+    title: "Deloitte Assisted Redaction",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Streamline the redaction process with advanced technology designed to identify and redact sensitive information, including personally identifiable information (PII), swiftly and accurately. This accelerator integrates with Relativity’s eDiscovery platform, leveraging OCR technology to help enhance efficiency and precision.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Assisted-Redaction.pdf",
   },
 
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: "/projects/search.png",
+    title: "Deloitte Search Term Assistant",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Optimize search term syntax analysis to reduce reviewer workload and expedite discovery processes. By integrating with the Relativity platform, this accelerator is designed to enable accurate and efficient identification of relevant documents, enhancing overall workflow efficiency.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Search-Term-Assistant.pdf",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: "/projects/audio.png",
+    title: "Deloitte Audio Assistant",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Revolutionize audio eDiscovery with technology that reduces transcription time while maintaining accuracy. This “first pass” tool integrates with the Relativity platform to streamline indexing, transcribing, and searching of audio files, enhancing efficiency and reducing workload.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Audio-Assistant.pdf",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "/projects/data.png",
+    title: "Deloitte Data Insights Accelerator",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Facilitate efficient transfer of review coding across workspaces, empowering reviewers to leverage preexisting work products efficiently. With support for both RelativityOne and on-prem platforms, this accelerator is designed to enhance review efficiency and consistency.",
+    link: "https://www.relativity.com/relativity/assets/pdf/Deloitte-Data-Insights-Accelerator.pdf",
   },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
+  // {
+  //   img: "https://picsum.photos/400/550/?grayscale",
+  //   title: "Project 1",
+  //   description:
+  //     "The wisdom of life consists in the elimination of non-essentials.",
+  //   link: "#",
+  // },
+  // {
+  //   img: "https://picsum.photos/400/?grayscale",
+  //   title: "Project 1",
+  //   description:
+  //     "The wisdom of life consists in the elimination of non-essentials.",
+  //   link: "#",
+  // },
+  // {
+  //   img: "https://picsum.photos/400/700/?grayscale",
+  //   title: "Project 1",
+  //   description:
+  //     "The wisdom of life consists in the elimination of non-essentials.",
+  //   link: "#",
+  // },
 ];
 
 const contactConfig = {
   YOUR_EMAIL: "ai25jay@gmail.com",
-  YOUR_FONE: "+81 7083801***",
+  YOUR_FONE: "+81 7083801713",
   description:
     "I'm always excited to connect with fellow professionals, potential collaborators, and anyone passionate about technology and innovation. Whether you have a project in mind, need technical advice, or just want to network, feel free to reach out. Let's discuss how we can work together to achieve remarkable results. You can contact me via email. Looking forward to hearing from you!",
   // creat an emailjs.com account
@@ -187,9 +225,12 @@ const contactConfig = {
 
 const socialprofils = {
   github: "https://github.com/PraJay25",
-  facebook: "https://facebook.com",
   linkedin: "https://www.linkedin.com/in/jay-prakash-37068624/",
+  medium: "https://medium.com/@er.jay25",
+  quora: "https://jp.quora.com/profile/Jay-Prakash-214",
+  code: "https://leetcode.com/progress/",
   twitter: "https://twitter.com",
+  facebook: "https://facebook.com",
 };
 export {
   meta,

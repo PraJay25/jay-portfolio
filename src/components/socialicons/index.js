@@ -10,7 +10,10 @@ import {
   FaInstagram,
   FaSnapchatGhost,
   FaTiktok,
-  FaCircle
+  FaCircle,
+  FaQuora,
+  FaMedium,
+  FaCodepen,
 } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
 
@@ -24,7 +27,10 @@ const ICON_MAPPING = {
   tiktok: FaTiktok,
   twitter: FaTwitter,
   twitch: FaTwitch,
-  youtube: FaYoutube
+  youtube: FaYoutube,
+  quora: FaQuora,
+  medium: FaMedium,
+  code: FaCodepen,
 };
 
 export const Socialicons = (params) => {
@@ -35,7 +41,7 @@ export const Socialicons = (params) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
           return (
             <li key={platform}>
-              <a href={url}>
+              <a href={url} target="blank">
                 <IconComponent />
               </a>
             </li>
